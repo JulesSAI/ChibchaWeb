@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChibchaWeb</title>
+</head>
+<body>
+    <h1>Bienvenidos a ChibchaWeb</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <label>Nickname:</label><br>
+        <input type="text" name="nickname"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre"><br><br>
+
+        <label>Teléfono:</label><br>
+        <input type="number" name="telefono"><br><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
